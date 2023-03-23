@@ -126,6 +126,171 @@ header ul li a:hover {
     top: 10px;
     animation: Anim 5s linear alternate infinite;
 }
+.clock {
+    width: 300px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    left: 250px;
+    bottom: 25px;
+}
+.point {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #000000;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1111;
+}
+.clock-hand {
+    position: absolute;
+    border-radius: 5px;
+    width: 2px;
+    height: 9px;
+    background-color: #ff2600;
+    left: 50%;
+    top: 50%;
+    transform-origin: 0 0;
+    animation: AnimH 2s infinite linear;
+    z-index: 1;
+}
+.clock-hand2 {
+    position: absolute;
+    border-radius: 5px;
+    width: 2px;
+    height: 18px;
+    background-color: #ff9d00;
+    left: 50%;
+    top: 50%;
+    transform-origin: 0 0;
+    animation: AnimH 3s infinite linear;
+    z-index: 2;
+}
+.clock-hand3 {
+    position: absolute;
+    border-radius: 5px;
+    width: 2px;
+    height: 27px;
+    background-color: #fbff00;
+    left: 50%;
+    top: 50%;
+    transform-origin: 0 0;
+    animation: AnimH 4s infinite linear;
+    z-index: 3;
+}
+.clock-hand4 {
+    position: absolute;
+    border-radius: 5px;
+    width: 2px;
+    height: 36px;
+    background-color: #00ff15;
+    left: 50%;
+    top: 50%;
+    transform-origin: 0 0;
+    animation: AnimH 5s infinite linear;
+    z-index: 4;
+}
+.clock-hand5 {
+    position: absolute;
+    border-radius: 5px;
+    width: 2px;
+    height: 45px;
+    background-color: #00fff7;
+    left: 50%;
+    top: 50%;
+    transform-origin: 0 0;
+    animation: AnimH 6s infinite linear;
+    z-index: 5;
+}
+.clock-hand6 {
+    position: absolute;
+    border-radius: 5px;
+    width: 2px;
+    height: 54px;
+    background-color: #001eff;
+    left: 50%;
+    top: 50%;
+    transform-origin: 0 0;
+    animation: AnimH 7s infinite linear;
+    z-index: 6;
+}
+.clock-hand7 {
+    position: absolute;
+    border-radius: 5px;
+    width: 2px;
+    height: 63px;
+    background-color: #ff00ff;
+    left: 50%;
+    top: 50%;
+    transform-origin: 0 0;
+    animation: AnimH 8s infinite linear;
+    z-index: 7;
+}
+.clock-hand8 {
+    position: absolute;
+    border-radius: 5px;
+    width: 2px;
+    height: 72px;
+    background-color: #00ffff;
+    left: 50%;
+    top: 50%;
+    transform-origin: 0 0;
+    animation: AnimH 9s infinite linear;
+    z-index: 8;
+}
+.clock-hand9 {
+    position: absolute;
+    border-radius: 5px;
+    width: 2px;
+    height: 75px;
+    background-color: #d4ff00;
+    left: 50%;
+    top: 50%;
+    transform-origin: 0 0;
+    animation: AnimH 10s infinite linear;
+    z-index: 9;
+}
+.clock-hand10 {
+    position: absolute;
+    border-radius: 5px;
+    width: 2px;
+    height: 75px;
+    background-color: #f200ff;
+    left: 50%;
+    top: 50%;
+    transform-origin: 0 0;
+    animation: AnimH 11s infinite linear;
+    z-index: 10;
+}
+
+.clock-hand11 {
+    position: absolute;
+    border-radius: 5px;
+    width: 2px;
+    height: 75px;
+    background-color: #006eff;
+    left: 50%;
+    top: 50%;
+    transform-origin: 0 0;
+    animation: AnimH 12s infinite linear;
+    z-index: 11;
+}
+@keyframes AnimH {
+    from {
+        transform: rotate(180deg);
+
+    }
+    to {
+        transform: rotate(540deg);
+
+    }
+}
+
 @keyframes Anim {
     from {
         margin-left: 5%;
@@ -151,11 +316,17 @@ header ul li a:hover {
         color: white;
         font-size: 15px;
     }
+    .clock {
+        display: none;
+    }
 }
 @media screen and (max-width: 768px){
     body {
         background-color: rgb(65, 65, 65);
         width: 95%;
+    }
+    .clock {
+        display: none;
     }
     .head {
         position: relative;
